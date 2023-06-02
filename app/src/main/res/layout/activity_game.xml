@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <com.example.zulkar_game.GameView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myGameView"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonLeft"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/left"
+
+                    />
+                <Button
+                    android:id="@+id/buttonRight"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/right"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonPause"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="pauseGame"
+                    android:background="@drawable/lock"
+
+                    />
+                <Button
+                    android:id="@+id/buttonRestart"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="restartGame"
+                    android:background="@drawable/refresh"
+
+                    />
+                <Button
+                    android:id="@+id/buttonStop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="stopGame"
+                    android:background="@drawable/stop"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
